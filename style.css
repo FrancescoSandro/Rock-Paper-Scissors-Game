@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #0d2c44;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Choices */
+.choices {
+    margin-top: 40px;
+}
+
+.choice {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Colors */
+#rock {
+    background-color: #ff6b81;
+}
+
+#paper {
+    background-color: #a55eea;
+}
+
+#scissors {
+    background-color: #4b7bec;
+}
+
+/* Score */
+.score {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.score h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.score p {
+    margin: 5px 0;
+}
+
+/* Result */
+.result {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* Console board styling */
+.console-board {
+    position: fixed;
+    right: 20px; /* position on the right side */
+    top: 320px;  /* adjust top as needed */
+    width: 230px;
+    height: 115px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: monospace;
+    /* overflow-y: auto; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.console-board h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+.console-output {
+    font-size: 14px;
+    line-height: 1.5;
+    height: calc(100% - 30px);
+    overflow-y: auto;
+}
+
+/* Optional: different colors for logs, info, errors */
+.console-output .log { color: #00ff00; }
+.console-output .info { color: #00dfff; }
+.console-output .error { color: #ff4d4d; }
